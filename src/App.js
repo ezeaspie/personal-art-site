@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Post from './Post';
 import LightBox from './LightBox';
 import Header from './Header';
@@ -67,7 +67,7 @@ class App extends Component {
   toggleLightBox = (imageId = undefined) => {
     if (imageId !== undefined) {
       let found = artList.find((piece) => {
-        return piece.id == imageId;
+        return piece.id === imageId;
       });
       this.setState({selectedPiece : found});
     }

@@ -5,6 +5,8 @@ class Header extends Component {
     render() {
     return(
         <header>
+            <h1>Ezequiel Espinoza</h1>
+            <h2>A creative archive</h2>
             <nav>
                 <ul>
                     <li><Link to='/'>Home</Link></li>

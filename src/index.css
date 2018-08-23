@@ -53,7 +53,9 @@ body {
 }
 
 .gallery {
-	padding: 1em;
+	padding: 1em 0;
+	-ms-flex-direction: column;
+	    flex-direction: column;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -70,7 +72,7 @@ body {
   display: inline-block;
 	-webkit-box-sizing:border-box;
 	        box-sizing:border-box;
-  max-width:30%;
+  max-width:;
 	margin: 1em 0;
 }
 .postRow {
@@ -80,6 +82,8 @@ body {
 	    align-content: center;
 	-ms-flex-align: center;
 	    align-items: center;
+	-ms-flex-direction: column;
+	    flex-direction: column;
 }
 
 .post img {
@@ -114,14 +118,19 @@ body {
 }
 
 .lightbox {
-	position:absolute;
-	background: rgba(0,0,0,.7);
+	padding: 1em 0;
+	position:fixed;
+	top:0;
+	bottom:0;
+	background: rgba(0,0,0,.85);
 	width: 100%;
 	-ms-flex-pack: center;
 	    justify-content: center;
 	color:#d3d3d3;
 	-webkit-transition: opacity ease-in-out .2s;
 	-o-transition: opacity ease-in-out .2s;
+	-webkit-transition: all ease-in-out .2s;
+	-o-transition: all ease-in-out .2s;
 	transition: all ease-in-out .2s;
 	cursor: pointer;
 }
@@ -134,7 +143,7 @@ body {
 }
 
 .lightbox img {
-	max-width: 450px;
+	width:50%;
 }
 
 .lightbox h2 {
@@ -148,4 +157,69 @@ body {
 }
 .lightbox p {
 	padding: .5em;
+}
+
+header {
+	background: rgba(0,0,0,.9);
+}
+
+h1,
+header h2 {
+	color: #d3d3d3;
+}
+
+h1 {
+	font-family: 'Dosis';
+	font-weight:bold;
+	font-size:160%;
+	padding-top: .5em;
+	padding-left:.5em;
+}
+
+header h2 {
+	font-family: 'Open Sans';
+	font-size:120%;
+	padding: .5em 0;
+	padding-top: .5em;
+	padding-left:1em;
+}
+
+nav ul {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-direction:column;
+	    flex-direction:column;
+}
+
+nav ul li a{
+	color: #a4a4a4;
+	display: inline-block;
+	padding: 2%;
+	width:100%;
+	text-decoration: none;
+	-webkit-transition:ease-in all .2s;
+	-o-transition:ease-in all .2s;
+	transition:ease-in all .2s;
+}
+
+nav ul li{
+		-webkit-transition:ease-in all .2s;
+		-o-transition:ease-in all .2s;
+		transition:ease-in all .2s;
+}
+
+nav ul li:hover {
+	-webkit-transition:ease-in all .2s;
+	-o-transition:ease-in all .2s;
+	transition:ease-in all .2s;
+	background:  #E9E9E9;
+}
+
+nav ul li:hover > a {
+	color:rgba(0,0,0,.9);
+	-webkit-transition:ease-in all .2s;
+	-o-transition:ease-in all .2s;
+	transition:ease-in all .2s;
 }
