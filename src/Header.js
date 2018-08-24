@@ -5,11 +5,12 @@ class Header extends Component {
     render() {
     return(
         <header>
+            <Link to='/' className="home-link">
             <h1>Ezequiel Espinoza</h1>
             <h2>A creative archive</h2>
+            </Link>
             <nav>
                 <ul>
-                    <li><Link to='/'>Home</Link></li>
                     <li><Link to='/digital-art'>Digital</Link></li>
                     <li><Link to='/mixed-media-art'>Mixed Media</Link></li>
                     <li><Link to='/traditional-art'>Traditional</Link></li>
