@@ -17,13 +17,13 @@ class Gallery extends Component {
             gallery = this.props.data.filter(obj => obj.medium === "Mixed Media");
         }
         if (this.props.filter === 'traditional') {
-            gallery = this.props.data.filter(obj => obj.medium === "Pencil on Paper" && obj.medium === "Acrylic on Canvas" && obj.medium === "Pen on Paper");
+            gallery = this.props.data.filter(obj => obj.medium === "Pencil on Paper" || obj.medium === "Acrylic on Canvas" || obj.medium === "Pen on Paper");
         }
         if (this.props.filter === 'featured') {
             gallery = this.props.data.filter(obj => obj.featured);
         }
         if (this.props.filter === 'sketch') {
-            gallery = this.props.data.filter(obj => obj.medium === "Sketchbook");
+            gallery = this.props.data.filter(obj => obj.medium === "Sketch");
         }
 
         for (let i = 0; i < gallery.length; i++) {

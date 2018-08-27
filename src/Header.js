@@ -17,6 +17,9 @@ class Header extends Component {
                     <li><Link to='/sketchbook-art'>Sketchbook</Link></li>
                     <li><Link to='/all'>All</Link></li>
                 </ul>
+                <ul>
+                    <li><Link to='/comic-list'>Comics and Graphic Novels</Link></li>
+                </ul>
             </nav>
         </header>
     );
