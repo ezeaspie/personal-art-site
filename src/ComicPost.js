@@ -15,14 +15,11 @@ class ComicPost extends Component {
         const volumeList = [];
 
         for (let i = 0; i < this.props.item.volumes.length; i++) {
+            let url= `reader/${this.props.item.series}/${i}/0`;
             volumeList.push(
-                <Link 
-                to='/comic-list/:series/:volume/:page'
-                params={{ 
-                    series: this.props.item.series,
-                    volume: i,
-                    page: 0,
-                    }}>
+                <Link key={`Volume${this.props.item.series}${i}`} 
+                to={url}
+                >
                 <li>{this.props.item.volumes[i].title}</li>
                 </Link>
             );

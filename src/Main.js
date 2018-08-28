@@ -15,7 +15,7 @@ class Main extends Component {
                     <Route exact path='/all' component={props => <Gallery data={this.props.data} filter={'none'} toggleLightBox={this.props.toggleLightBox} {...props} />} />
                     <Route exact path='/sketchbook-art' component={props => <Gallery data={this.props.data} filter={'sketch'} toggleLightBox={this.props.toggleLightBox} {...props} />} />
                     <Route exact path='/comic-list' component={props => <ComicList data={this.props.data} filter={'sketch'} toggleLightBox={this.props.toggleLightBox} {...props} />}/>
-                    <Route path='/comic-list/:series/:volume/:page' component={props => <Reader {...props} />} />
+                    <Route path='/reader' component={props => <Reader {...props} />} />
                 </Switch>
         )
     }

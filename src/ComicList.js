@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ComicPost from './ComicPost';
 import comicList from './data/comicData';
-import { Switch, Route } from 'react-router-dom';
-
 
 class ComicList extends Component {
 
