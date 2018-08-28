@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Gallery from './Gallery';
+import ComicList from './ComicList';
+import Reader from './Reader';
 
 class Main extends Component {
     render() {
@@ -12,7 +14,8 @@ class Main extends Component {
                     <Route exact path='/traditional-art' component={props => <Gallery data={this.props.data} filter={'traditional'} toggleLightBox={this.props.toggleLightBox} {...props} />} />
                     <Route exact path='/all' component={props => <Gallery data={this.props.data} filter={'none'} toggleLightBox={this.props.toggleLightBox} {...props} />} />
                     <Route exact path='/sketchbook-art' component={props => <Gallery data={this.props.data} filter={'sketch'} toggleLightBox={this.props.toggleLightBox} {...props} />} />
-                    <Route exact path='/comic-list' component={props => <Gallery filter={'comic'} {...props} />} />
+                    <Route exact path='/comic-list' component={props => <ComicList data={this.props.data} filter={'sketch'} toggleLightBox={this.props.toggleLightBox} {...props} />}/>
+                    <Route path='/comic-list/:series/:volume/:page' component={props => <Reader {...props} />} />
                 </Switch>
         )
     }
