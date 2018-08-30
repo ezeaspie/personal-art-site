@@ -2,13 +2,13 @@ const comicList = [
     {
         series: "Harbour: The Ring of Deceit",
         coverImage:"/comics/HarbourTheRingofDeceit/Cover.jpg",
-        description: "Madeline Harbour is a small-time detective in the city of Northern Serenity. Despite her own personal doubts and her mother's protective nature she decides to take up smaller cases in hope that she can become skilled enough to eventually find out what really happened to her father. When Ada Lima, an eccentric yet kind woman, asks Madeline to help her find her missing ring, Madeline must get her team together and follow the trail of clues. What starts as a simple case turns into something much bigger that involves a history of family troubles, strange and dangerous figures, the unspoken history of Northern Serenity, and a slow-brewing act of revenge.",
+        description: "<p>Madeline Harbour is a small-time detective, solving mysteries about runaway cats, stolen answer sheets, and misplaced library books. Wanting to be a helpful figure in a corrupt and dark city, Madeline secretly longs to take on a ‘real’ case. She finally gets her chance when a local calls her, asking if the young detective can help her figure out who stole her prized ring.</p><p>Grappling with her own self-doubt and her mother’s protective nature, Madeline and her friends agree to help, hoping that solving the case will give them the experience they need to tackle Madeline’s biggest mystery - the disappearance of her father. However, what starts off as a simple theft case turns into something much bigger that involves an estranged family, a glimpse into the mind of strange criminals, a descent into the unspoken and shady history of their city, a slow brewing act of revenge, and shadowy figures working to foil Madeline’s investigation.</p>",
         volumes: [],
     },//Close Ring Object
     {
         series: "Harbour: The Heroic Villainess",
         coverImage: "/comics/HarbourTheHeroicVillainess/Cover.png",
-        description: "Two years after the events of Harbour: The Ring of Deceit, Madeline Harbour has become a community heroine in most eyes... but some believe her to be no different than the corrupt officials she ousted. When a young girl by the name of Maeve Colbrun goes missing, Madeline must travel to the Western Isle and come face to face with the dangerous gangs that control it in order to find the missing girl. With the NSPD's Maxine Rubin on her tail, eager to solve the case before Madeline in order to redeem herself in the eyes of the public, Madeline and her team must rise up to the challenge of finding Maeve, proving they mean well, and avoiding the wrath of the West's criminal masterminds.",
+        description: "<p>Two years after the events of Harbour: The Ring of Deceit, Madeline Harbour has become a community heroine in most eyes... but some believe her to be no different than the corrupt officials she ousted.</p><p>When a young girl by the name of Maeve Colbrun goes missing, Madeline must travel to the Western Isle and come face to face with the dangerous gangs that control it in order to find the missing girl.</p><p>With the NSPD's Maxine Rubin on her tail, eager to solve the case before Madeline in order to redeem herself in the eyes of the public, Madeline and her team must rise up to the challenge of finding Maeve, proving they mean well, and avoiding the wrath of the West's criminal masterminds.</p>",
         volumes: [
             {
                 title: "Disillusioned - Part 1",
@@ -26,7 +26,9 @@ const comicList = [
             {
                 title: "Rasoca Traviesa - Snippet",
                 pages: [
-                    "1","2",
+                    "/comics/HarbourTheHeroicVillainess/999-RasocaTraviesaSnippet/1.png",
+                    "/comics/HarbourTheHeroicVillainess/999-RasocaTraviesaSnippet/2.png",
+                    "/comics/HarbourTheHeroicVillainess/999-RasocaTraviesaSnippet/3.png",
                 ],
             }, 
         ] //Close "volumes" array.
@@ -34,9 +36,10 @@ const comicList = [
     {
         series: "SweetWater",
         coverImage: "/comics/Sweetwater/Cover.jpg",
-        description: "After leaving behind the city and the her family's expectations of her, Darby Sammon ends up in the rural town of Sweetwater and finds a job as a park ranger for the state park - 'Sweetwater Ridge'. Her dream of living out the quiet rural life she wanted is quickly put to rest when she learns that being a park ranger at Sweetwater Ridge means dealing with strange occurings and events.",
+        description: "<p>Leaving behind the city, her crummy jobs, and whatever lofty expectations her family set for her, Darby Sammon takes what she has and moves to the rural town of SweetWater, hoping that she can reboot her life to find personal peace and happiness.</p><p>Darby’s fortune seems to be turning for the better when she quickly finds work as a park ranger at the state park, SweetWater Ridge. She begins to fall in love with her new life but her hopes of a relaxed and easygoing life are quickly dashed when she learns that being a ranger at SweetWater Ridge involves quelling ghosts that can’t help but cause trouble at the park.</p>",
         volumes: [],
-    }
+    },
+
 ];
 
 export default comicList;

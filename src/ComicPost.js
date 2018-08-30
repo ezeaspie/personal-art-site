@@ -24,6 +24,17 @@ class ComicPost extends Component {
                 </Link>
             );
         }
+        let noClickHoverStyle = {cursor:'auto', backgroundColor: '#fff'};
+
+        if(!this.props.item.volumes.length){
+            volumeList.push(<li key={`Volume${this.props.item.series}doesNotExist`} style={noClickHoverStyle}>No Volumes Avaliable, check back soon!</li>);
+        }
+
+        let description = this.props.item.description;
+
+        function createMarkup() {
+            return { __html: description };
+        }
 
         return (
             <div className="comic-listing">
@@ -31,7 +42,8 @@ class ComicPost extends Component {
                 <img className="comic-image" src={this.props.item.coverImage} alt={this.props.item.series}/>
                     <div className="comic-description-info">
                         <h2>{this.props.item.series}</h2>
-                        <h3>{this.props.item.description}</h3>
+                        <div className="comic-description" 
+                        dangerouslySetInnerHTML={createMarkup()} />
                     </div>
                 </div>
                     {
